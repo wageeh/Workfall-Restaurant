@@ -11,3 +11,4 @@ it consists of 2 main components
  
  I also finished it first using database cosmos db till i get the note that no db needed so i swithced it to saving the data in session whihc is presisted for 10 min
   
+For running the application, please make sure that the solution set to run multiple apps - api & spa - 
