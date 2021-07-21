@@ -1,0 +1,26 @@
+<div class="contianer">
+  <div class="my-4">
+    <div class="container">
+      <div class="row">
+        <h3>Orders' List</h3>
+        <div class="col-12">
+          <label>Enter new order</label>
+          <input [(ngModel)]="name" type="text" placeholder="Enter value">
+          <button (click)="append(name)">Append</button> 
+        </div>
+        <div class="col-12">
+          <div class="row day-columns">
+            <table>
+              <thead><td>Name</td><td>Branch</td><td>Date</td></thead>
+              <tr *ngFor="let order of OrderList">
+                <td>{{order.name}}</td>
+                <td>{{order.branch}}</td>
+                <td>{{order.createdDate}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
